@@ -474,7 +474,7 @@ img {
   left: 50%;
   width: 408px;
   min-height: 584px;
-  padding: 76px 24px;
+  padding: 24px;
   border-radius: 4px;
   background-color: #fcfcfc;
   transform: translate(-50%, -50%);
@@ -505,30 +505,38 @@ img {
 }
 
 .modal-title {
+  margin-top: 48px;
+  margin-bottom: 16px;
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 /* ==========modal-form========== */
 
-/* .modal-label {
+.modal-form-field-wrapper {
+  margin-bottom: 8px;
+}
+.modal-label {
   display: block;
-  margin-bottom: 23px;
-} */
-/* .modal-input {
+  margin-bottom: 4px;
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+}
+.modal-input {
   width: 100%;
-  height: 60px;
-  padding-left: 21px;
-  border: 1px solid #cacaca;
-  border-radius: 5px;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-} */
+}
 /* .modal-input::placeholder {
   color: #000;
   line-height: 1.55;
@@ -540,7 +548,7 @@ img {
 } */
 /* .modal-message-label {
   display: block;
-  margin-bottom: 33px;
+  margin-bottom: 16px;
 } */
 /* .modal-message {
   width: 100%;
