@@ -449,7 +449,7 @@ img {
 .social-list-link-footer:focus {
   background: #31d0aa;
 }
-/* ==========modal============== */
+/* ==========modal window============== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -458,16 +458,16 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-}
-
-/* .is-hidden {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.no-scroll {
-  overflow: hidden;
-} */
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -483,29 +483,44 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #e7e9fc;
+  line-height: 0;
+  fill: #2e2f42;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn-icon {
   width: 24px;
   height: 24px;
-  border: none;
-  border-radius: 4px;
-  background-color: #e7e9fc;
 }
 
-/* .modal-title {
-  margin-bottom: 31px;
-  color: #022c40;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.255;
-  letter-spacing: 0.03em;
-} */
-
-/* .modal-form {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  fill: #fff;
 }
-.modal-label {
+
+.modal-title {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* ==========modal-form========== */
+
+/* .modal-label {
   display: block;
   margin-bottom: 23px;
-}
-.modal-input {
+} */
+/* .modal-input {
   width: 100%;
   height: 60px;
   padding-left: 21px;
@@ -513,21 +528,21 @@ img {
   border-radius: 5px;
   background-color: transparent;
   outline: transparent;
-}
-.modal-input::placeholder {
+} */
+/* .modal-input::placeholder {
   color: #000;
   line-height: 1.55;
   letter-spacing: 0.03em;
   text-align: justify;
-}
-.modal-input:focus {
+} */
+/* .modal-input:focus {
   border-color: #275f7a;
-}
-.modal-message-label {
+} */
+/* .modal-message-label {
   display: block;
   margin-bottom: 33px;
-}
-.modal-message {
+} */
+/* .modal-message {
   width: 100%;
   height: 149px;
   padding: 21px;
@@ -535,17 +550,17 @@ img {
   border-radius: 5px;
   outline: transparent;
   resize: none;
-}
-.modal-message::placeholder {
+} */
+/* .modal-message::placeholder {
   color: #000;
   line-height: 1.55;
   letter-spacing: 0.03em;
   text-align: justify;
-}
-.modal-message:focus {
+} */
+/* .modal-message:focus {
   border-color: #275f7a;
-}
-.modal-submit-btn {
+} */
+/* .modal-submit-btn {
   min-width: 181px;
   height: 48px;
   border: none;
