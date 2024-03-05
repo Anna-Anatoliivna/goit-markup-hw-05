@@ -486,6 +486,7 @@ img {
   align-items: center;
   min-width: 165px;
   height: 40px;
+  line-height: 1.5;
   padding: 8px 24px;
   border-radius: 4px;
   font-weight: 500;
