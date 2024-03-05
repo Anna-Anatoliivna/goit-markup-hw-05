@@ -621,6 +621,13 @@ img {
 .modal-form-checkbox-wrapper {
   margin-bottom: 24px;
 }
+.modal-form-privacy-checkbox:checked
+  + .modal-checkbox
+  .modal-form-own-checkbox {
+  border: none;
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
 
 .modal-checkbox {
   display: block;
@@ -635,4 +642,19 @@ img {
   line-height: 133%;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+.modal-form-own-checkbox {
+  display: inline-flex;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
